@@ -43,36 +43,36 @@ while True:
         s.push(int(do[1]))
     elif operation == 'get':
         if s.is_empty():
-            print('Stack is empty.')
+            print('No car here')
         else:
             if s.contain(int(do[1])):
                 ind = s.find_index(int(do[1]))
                 for i in range(ind+1,s.size()):
                     a = s.pop()
                     soi2.push(a)
-                print (s.pop())
+                print ('Car taken: ',s.pop())
                 while not soi2.is_empty():
                     s.push(soi2.pop())
             else:
-                print("no that car")
+                print('No that car')
     elif operation == 'size':
-        print('Size value: ', s.size())
+        print('No of cars: ', s.size())
     elif operation == 'peek':
-        print('Top value: ', s.peek())
+        print('Latest car: ', s.peek())
     elif operation == 'show':
         if s.is_empty():
-            print('Stack is empty.')
+            print('No car here')
         else:
             s.show()
     elif operation == 'contain':
         if s.is_empty():
-            print('Stack is empty.')
+            print('No car here')
         else:
-            print('Value in stack?: ', s.contain(int(do[1])))
+            print('Is that car here: ', s.contain(int(do[1])))
     elif operation == 'pop':
         if s.is_empty():
-            print('Stack is empty.')
+            print('No car here')
         else:
-            print('Popped value: ', s.pop())
+            print('Car out: ', s.pop())
     elif operation == 'quit':
         break
