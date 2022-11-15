@@ -160,7 +160,7 @@ class BST:
             self.print_tree(current_node.left, level+1)
 
     def store_data(self):
-        file = open("/Users/Onlyjune/Desktop/PCA2022/week 9/users7.txt", "r")
+        file = open("/Users/Onlyjune/Desktop/PCA2022/week9/users7.txt", "r")
         for line in file:
             line = line.strip()
             if len(line) > 1:
