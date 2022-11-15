@@ -154,13 +154,13 @@ class BST:
     def print_tree(self, current_node, level):
         if current_node.right is not None:
             self.print_tree(current_node.right, level+1)
-        print(' '*6*level, end="")
+        print(' '*(6+1)*level, end="")
         print(current_node.username)
         if current_node.left is not None:
             self.print_tree(current_node.left, level+1)
 
     def store_data(self):
-        file = open("//Users//Onlyjune//Desktop//week 9//users7.txt", "r")
+        file = open("/Users/Onlyjune/Desktop/PCA2022/week 9/users7.txt", "r")
         for line in file:
             line = line.strip()
             if len(line) > 1:
