@@ -15,7 +15,7 @@ class BT:
             self.__insert_node(self.root, new_node)
             
     def __insert_node(self, current_node, new_node): 
-        if new_node.data <= current_node.data: 
+        if new_node.data <= current_node.data: # new node น้อยกว่า
             if current_node.left is not None: 
                 self.__insert_node(current_node.left, new_node) 
             else: 
@@ -177,6 +177,6 @@ print("")
 binaryTree.postorder(root)
 print("")
 binaryTree.print(root,0)
-binaryTree.remove(90)
+binaryTree.remove(35)
 print("----------------------- after remove -----------------------")
 binaryTree.print(root,0)
